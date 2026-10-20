@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --primary: #FFB612;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: #050505;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .movie-title, .font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  font-style: normal !important;
+}
+
+.glass-panel {
+  background: var(--glass);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid var(--glass-border);
+}
+
+.movie-card {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+  border-radius: 2rem;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+  border-color: var(--primary);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.7);
+}
+
+.hero-mask {
+  background: linear-gradient(to top, #050505 0%, rgba(5, 5, 5, 0.3) 60%, transparent 100%);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFB612;
+}
+
+/* Custom range input slider for media player */
+input[type="range"] {
+  accent-color: #FFB612;
+}
+
+/* Terminal / Code font */
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}

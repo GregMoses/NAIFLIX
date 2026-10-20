@@ -1,0 +1,11 @@
+{
+  "name": "NaiFlix | Ultra HD Global",
+  "description": "Ultra HD global movie streaming platform with adaptive bitrate cinema player and instant ultra hd download engine.",
+  "requestFramePermissions": [
+    "fullscreen",
+    "autoplay",
+    "picture-in-picture",
+    "encrypted-media"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
