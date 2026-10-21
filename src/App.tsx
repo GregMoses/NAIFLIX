@@ -9,6 +9,7 @@ import { FFmpegQueueDrawer } from './components/FFmpegQueueDrawer';
 import { FloatingPlayer } from './components/FloatingPlayer';
 import { HLS_CINEMA_STREAMS } from './data/hlsStreams';
 import { Radio, HardDrive, Cpu, Film, Download } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const API_KEY = '68ba09e7355a443a32a428981c6ea063';
 
@@ -394,6 +395,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
